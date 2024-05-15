@@ -1,0 +1,25 @@
+module "fsx_windows" {
+  source                                 = "./modules/fsx-windows/"
+  environment                            = var.environment
+  region                                 = var.region
+  fsx_name                               = var.fsx_name
+  fsx_description                        = var.fsx_description
+  owners                                 = var.owners
+  vpc_cidr                               = var.vpc_cidr
+  vpc_id                                 = var.vpc_id
+  vpc_subnets_ids                        = var.vpc_subnets_ids
+  preferred_subnet_id                    = var.preferred_subnet_id
+  fsx_kms_key_arn                        = var.fsx_kms_key_arn
+  aliases                                = var.aliases
+  automatic_backup_retention_days        = var.automatic_backup_retention_days
+  deployment_type                        = var.deployment_type
+  managed_ad_domain                      = var.managed_ad_domain
+  managed_ad_ip                          = var.managed_ad_ip
+  ou_distinguished_name                  = var.ou_distinguished_name
+  storage_type                           = var.storage_type
+  throughput_capacity                    = var.throughput_capacity
+  password                               = var.password
+  username                               = var.username 
+  skip_final_backup_on_deletion          = var.skip_final_backup_on_deletion
+  storage_capacity                       = var.storage_capacity
+}

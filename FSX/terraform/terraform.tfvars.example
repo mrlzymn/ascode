@@ -1,0 +1,26 @@
+environment                            = "production"
+region                                 = "us-east-1"
+fsx_name                               = "my-fsx-share"
+fsx_description                        = "share contains media files"
+owners                                 = "IT Team"
+vpc_cidr                               = "10.0.0.0/16"
+vpc_id                                 = "vpc-1234abc0"
+deployment_type                        = "MULTI_AZ_1"
+vpc_subnet_ids                         = ["subnet-123456", "subnet-abcdef"]
+preferred_subnet_id                    = "subnet-123456"
+throughput_capacity                    = 8
+automatic_backup_retention_days        = 7
+fsx_kms_key_arn                        = "arn:aws:kms:us-east-1:123456789012:key/abcd1234-a123-456a-a12b-a123b456c789"
+preferred_subnet_id                    = "subnet-123456"
+security_group_ids                     = ["sg-123456"]
+deployment_type                        = "SINGLE_AZ_2"
+managed_ad_domain                      = "domain.com"
+managed_ad_ip                          = ["10.0.0.10", "10.0.0.11"]
+skip_final_backup                      = false
+storage_capacity                       = 2048
+storage_type                           = "SSD"
+aliases                                = ["fsx-share.example.com"]
+domain_name                            = "example.com"
+password                               = "YourADPassword"
+username                               = "YourADUser"
+organizational_unit_distinguished_name = "OU=FSx,DC=example,DC=com"
